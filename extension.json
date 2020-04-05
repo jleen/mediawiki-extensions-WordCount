@@ -1,0 +1,18 @@
+{
+    "Hooks": {
+        "EditPage::showEditForm:initial": [
+            "WordCountHooks::doIt"
+        ]
+    },
+    "AutoloadClasses": {
+        "WordCountHooks": "includes/WordCountHooks.php"
+    },
+    "ResourceModules": {
+        "ext.wordCount": {
+            "group": "ext.wordCount",
+            "scripts": [
+                "extensions/WordCount/modules/ext.wordCount.js"
+            ]
+        }
+    }
+}
